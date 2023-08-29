@@ -1,0 +1,9 @@
+target/
+*~
+*.iml
+*nbactions.xml
+.vscode/
+.idea
+nb-configuration.xml
+**/nbproject
+.flattened-pom.xml
