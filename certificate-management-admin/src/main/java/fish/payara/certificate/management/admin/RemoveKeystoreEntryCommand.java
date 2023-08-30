@@ -66,7 +66,7 @@ import java.security.cert.CertificateException;
 
 /**
  * Remote Admin Command that removes a certificate or bundle from the keystore.
- * @author Andrew Pielage <andrew.pielage@payara.fish>
+ * @author Andrew Pielage andrew.pielage@payara.fish
  */
 @Service(name = "_remove-keystore-entry")
 @PerLookup

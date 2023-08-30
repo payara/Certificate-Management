@@ -62,7 +62,7 @@ import java.util.Map;
 
 /**
  * The Handler method and associated helper methods for the Certificate Management pages.
- * @author Andrew Pielage <andrew.pielage@payara.fish>
+ * @author Andrew Pielage andrew.pielage@payara.fish
  */
 public class CertificateManagementRestApiHandlers {
 

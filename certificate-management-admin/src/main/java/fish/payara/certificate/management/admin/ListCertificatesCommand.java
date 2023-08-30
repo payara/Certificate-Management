@@ -64,7 +64,7 @@ import java.util.Properties;
 
 /**
  * Remote Admin Command that lists the entries in the key and/or trust store.
- * @author Andrew Pielage <andrew.pielage@payara.fish>
+ * @author Andrew Pielage andrew.pielage@payara.fish
  */
 @Service(name = "list-certificates")
 @PerLookup

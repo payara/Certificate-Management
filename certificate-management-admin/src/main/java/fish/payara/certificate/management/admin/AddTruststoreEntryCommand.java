@@ -65,7 +65,7 @@ import java.io.File;
 
 /**
  * Remote Admin Command that adds a certificate or bundle to the truststore.
- * @author Andrew Pielage <andrew.pielage@payara.fish>
+ * @author Andrew Pielage andrew.pielage@payara.fish
  */
 @Service(name = "_add-truststore-entry")
 @PerLookup
