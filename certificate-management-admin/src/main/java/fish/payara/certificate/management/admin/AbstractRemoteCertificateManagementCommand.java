@@ -63,7 +63,7 @@ import java.util.List;
 
 /**
  * Parent class that contains various shared variables and methods for the remote certificate management commands.
- * @author Andrew Pielage <andrew.pielage@payara.fish>
+ * @author Andrew Pielage andrew.pielage@payara.fish
  */
 public abstract class AbstractRemoteCertificateManagementCommand implements AdminCommand {
 

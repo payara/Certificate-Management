@@ -66,7 +66,7 @@ import java.security.cert.CertificateException;
 
 /**
  * Remote Admin Command that remove a certificate or bundle from the truststore.
- * @author Andrew Pielage <andrew.pielage@payara.fish>
+ * @author Andrew Pielage andrew.pielage@payara.fish
  */
 @Service(name = "_remove-truststore-entry")
 @PerLookup

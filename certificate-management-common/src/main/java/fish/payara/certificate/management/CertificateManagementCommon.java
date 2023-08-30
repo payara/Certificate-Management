@@ -64,7 +64,7 @@ import java.util.concurrent.Callable;
 
 /**
  * Common methods shared across the certificate management commands.
- * @author Andrew Pielage <andrew.pielage@payara.fish>
+ * @author Andrew Pielage andrew.pielage@payara.fish
  */
 public class CertificateManagementCommon {
 

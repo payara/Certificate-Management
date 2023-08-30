@@ -50,7 +50,7 @@ import java.util.Map;
 
 /**
  * Parent class for the shared logic between the list-x-entries commands.
- * @author Andrew Pielage <andrew.pielage@payara.fish>
+ * @author Andrew Pielage andrew.pielage@payara.fish
  */
 public abstract class AbstractListStoreEntriesCommand extends AbstractCertManagementCommand {
 

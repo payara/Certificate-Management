@@ -51,7 +51,7 @@ import org.jvnet.hk2.annotations.Service;
  *      <code>(null)</code>, or a <code>URL</code> to the
  *      <code>console-config.xml</code> file.</p>
  *
- *  @author Andrew Pielage <andrew.pielage@payara.fish>
+ *  @author Andrew Pielage andrew.pielage@payara.fish
  *  @author Ken Paulsen (ken.paulsen@sun.com)
  */
 @Service

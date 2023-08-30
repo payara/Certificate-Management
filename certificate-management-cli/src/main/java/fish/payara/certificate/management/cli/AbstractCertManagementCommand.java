@@ -194,7 +194,7 @@ public abstract class AbstractCertManagementCommand extends LocalDomainCommand {
     }
 
     /**
-     * Parses the key & trust store locations and their passwords from the domain.xml
+     * Parses the key and trust store locations and their passwords from the domain.xml
      *
      * @throws CommandException if there's an issue parsing the domain.xml
      */
@@ -381,7 +381,7 @@ public abstract class AbstractCertManagementCommand extends LocalDomainCommand {
         }
 
         /**
-         * Parses the key & trust store locations and their passwords from the domain.xml, syncing with the DAS if
+         * Parses the key and trust store locations and their passwords from the domain.xml, syncing with the DAS if
          * the files are not yet present
          *
          * @throws CommandException If there's an issue parsing the domain.xml

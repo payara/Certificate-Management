@@ -49,7 +49,7 @@ import org.jvnet.hk2.annotations.Service;
 
 /**
  * CLI command that lists out all or a specific trust store entry for a given target instance or listener.
- * @author Andrew Pielage <andrew.pielage@payara.fish>
+ * @author Andrew Pielage andrew.pielage@payara.fish
  */
 @Service(name = "list-truststore-entries")
 @PerLookup
