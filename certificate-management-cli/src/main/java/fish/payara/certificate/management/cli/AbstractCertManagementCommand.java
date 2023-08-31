@@ -64,6 +64,9 @@ import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
 import java.security.cert.CertificateException;
 import java.util.logging.Level;
+import javax.inject.Inject;
+import org.glassfish.api.admin.ServerEnvironment;
+import org.glassfish.hk2.api.ServiceLocator;
 
 /**
  * Parent class from which other certificate management commands can extend. Contains the common methods and params.

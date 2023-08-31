@@ -46,7 +46,7 @@
 
     <groupId>fish.payara.extensions.certificate-management</groupId>
     <artifactId>certificate-management-parent</artifactId>
-    <version>2.0.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Payara Certificate Management Parent</name>
@@ -60,7 +60,8 @@
     </modules>
 
     <properties>
-        <payara.core.version>6.5.0</payara.core.version>
+        <payara.version>5.54.0</payara.version>
+        <jsftemplating.version>2.1.4</jsftemplating.version>
 
         <glassfish.glassfish-build.version>3.2.20.payara-p2</glassfish.glassfish-build.version>
         <glassfish.command-security-plugin.version>1.0.13</glassfish.command-security-plugin.version>
@@ -74,7 +75,7 @@
         <maven.javadoc.plugin.version>3.5.0</maven.javadoc.plugin.version>
         <maven.source.plugin.version>3.3.0</maven.source.plugin.version>
 
-        <java.version>11</java.version>
+        <java.version>8</java.version>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -87,12 +88,93 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>fish.payara.server.core</groupId>
-                <artifactId>core-bom</artifactId>
-                <version>${payara.core.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
+                <groupId>fish.payara.server.internal.common</groupId>
+                <artifactId>glassfish-api</artifactId>
+                <version>${payara.version}</version>
             </dependency>
+            <dependency>
+                <groupId>fish.payara.server.internal.admin</groupId>
+                <artifactId>config-api</artifactId>
+                <version>${payara.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>fish.payara.server.internal.orb</groupId>
+                <artifactId>orb-enabler</artifactId>
+                <version>${payara.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>fish.payara.server.internal.cluster</groupId>
+                <artifactId>cluster-ssh</artifactId>
+                <version>${payara.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>fish.payara.server.internal.core</groupId>
+                <artifactId>kernel</artifactId>
+                <version>${payara.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>fish.payara.server.internal.security</groupId>
+                <artifactId>security</artifactId>
+                <version>${payara.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>fish.payara.server.internal.admin</groupId>
+                <artifactId>admin-cli</artifactId>
+                <version>${payara.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>fish.payara.server.internal.admin</groupId>
+                <artifactId>server-mgmt</artifactId>
+                <version>${payara.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>fish.payara.server.internal.cluster</groupId>
+                <artifactId>cluster-common</artifactId>
+                <version>${payara.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>fish.payara.server.internal.cluster</groupId>
+                <artifactId>cluster-cli</artifactId>
+                <version>${payara.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>fish.payara.server.internal.admingui</groupId>
+                <artifactId>console-plugin-service</artifactId>
+                <version>${payara.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>fish.payara.server.internal.admingui</groupId>
+                <artifactId>console-common</artifactId>
+                <version>${payara.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.sun.jsftemplating</groupId>
+                <artifactId>jsftemplating</artifactId>
+                <version>${jsftemplating.version}</version>
+                <scope>provided</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>javax.servlet</groupId>
+                        <artifactId>javax.servlet-api</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>javax.faces</groupId>
+                        <artifactId>javax.faces-api</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>javax.el</groupId>
+                        <artifactId>el-api</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>com.sun.woodstock.dependlibs</groupId>
+                        <artifactId>dataprovider</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
