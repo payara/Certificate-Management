@@ -209,12 +209,7 @@
                 <configuration>
                     <notimestamp>true</notimestamp>
                     <splitindex>true</splitindex>
-                    <doctitle>Arquillian connector</doctitle>
-                    <links>
-                        <!-- Jakarta EE 10 apidocs not available yet, point to 9.1 for now -->
-                        <!--<link>https://jakarta.ee/specifications/platform/${version.jakartaee}/apidocs/</link>-->
-                        <link>https://jakarta.ee/specifications/platform/9.1/apidocs/</link>
-                    </links>
+                    <doctitle>Certificate Management</doctitle>
                 </configuration>
                 <executions>
                     <execution>
