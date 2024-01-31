@@ -65,7 +65,7 @@
 
         <glassfish.glassfish-build.version>3.2.20.payara-p2</glassfish.glassfish-build.version>
         <glassfish.command-security-plugin.version>1.0.13</glassfish.command-security-plugin.version>
-        <hk2.plugin.version>2.6.1.payara-p1</hk2.plugin.version>
+        <hk2.plugin.version>2.6.1.payara-p9</hk2.plugin.version>
         <hk2.config-generator.plugin.version>2.5.0-b53</hk2.config-generator.plugin.version>
 
         <maven.dependency.plugin.version>3.3.0</maven.dependency.plugin.version>
