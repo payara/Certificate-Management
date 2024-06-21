@@ -60,7 +60,7 @@
     </modules>
 
     <properties>
-        <payara.version>5.54.0</payara.version>
+        <payara.version>5.2020.5</payara.version>
         <jsftemplating.version>2.1.4</jsftemplating.version>
 
         <glassfish.glassfish-build.version>3.2.20.payara-p2</glassfish.glassfish-build.version>
