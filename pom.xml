@@ -68,7 +68,7 @@
         <hk2.plugin.version>2.6.1.payara-p9</hk2.plugin.version>
         <hk2.config-generator.plugin.version>2.5.0-b53</hk2.config-generator.plugin.version>
 
-        <maven.dependency.plugin.version>3.3.0</maven.dependency.plugin.version>
+        <maven.dependency.plugin.version>3.7.1</maven.dependency.plugin.version>
         <maven.jar.plugin.version>3.3.0</maven.jar.plugin.version>
         <maven.bundle.plugin.version>4.1.0</maven.bundle.plugin.version>
         <maven.gpg.plugin.version>3.1.0</maven.gpg.plugin.version>
